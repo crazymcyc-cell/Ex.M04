@@ -6,7 +6,7 @@ function calcularIMC() {
   const altura = parseFloat(document.getElementById("altura").value);
 
   // Validação
-  if (isNaN(peso) || isNaN(altura) || altura <= 0) {
+  if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
     document.getElementById("resultado").innerText =
       "Por favor, insira valores válidos!";
     document.getElementById("classificacao").innerText = "";
